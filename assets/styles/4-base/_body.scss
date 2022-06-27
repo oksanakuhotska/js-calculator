@@ -1,0 +1,14 @@
+body {
+	height: 100%;
+	font-family: $fontFamily;
+	font-size: $fontSizePrimary;
+	color: $colorPrimary;
+	font-weight: $fontWeightPrimary;
+	letter-spacing: normal;
+	line-height: 1;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	justify-content: space-between;
+}

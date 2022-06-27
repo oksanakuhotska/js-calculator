@@ -1,0 +1,42 @@
+
+
+$maxWidthContainer: 1260;
+$fontFamily: "Open Sans";
+
+$fontSizePrimary: 15px;
+$fontSizeMedium: 17px;
+$fontSizeTitle: 20px;
+
+$accentColor: #267bae;
+$secondaryColor: #ffffff;
+$infoColor: #ffca08;
+$lightColor: #f9f9f9;
+$darkColor: #000000;
+$orangeColor: #ff9626;
+
+$theme-colors: (
+	"accent":    $accentColor,
+	"secondary":  $secondaryColor,
+	"info":       $infoColor,
+	"light":      $lightColor,
+	"dark":       $darkColor,
+	"orange":     $orangeColor
+);
+
+
+
+
+$colorPrimary: #000000;
+$colorBlue: #267bae;
+$colorOrange: #ff9626;
+$colorYellow: #ffca08;
+$backgroundColorFooter: #f8f8f8;
+$colorWhite: #ffffff;
+$colorLightGrey: #f9f9f9;
+$colorGrey: #787878;
+
+// #4085b5; #303030; #808080; #585858; #d7dcdf; #006ea7; #303030; #cbcb20;
+
+
+$fontWeightPrimary: 400;
+$fontWeightLite: 300;

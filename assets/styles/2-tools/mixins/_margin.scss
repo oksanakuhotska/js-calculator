@@ -1,0 +1,6 @@
+@mixin margin ($marginTop, $marginRight, $marginBottom, $marginLeft){
+	margin-top: $marginTop;
+	margin-right: $marginRight;
+	margin-bottom: $marginBottom;
+	margin-left: $marginLeft;
+}

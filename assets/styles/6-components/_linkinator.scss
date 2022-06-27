@@ -1,0 +1,48 @@
+.c-linkinator {
+	box-shadow: 0 0 4px rgba(7, 88, 145, 0.09);
+	border: 1px solid #d7dcdf;
+	border-radius: 4px;
+}
+
+.c-linkinator-link-arrow {
+	position: absolute;
+	top: 16px;
+	right: 0;
+}
+
+.с-linkinator-header {
+	color: $colorPrimary;
+	@include  fontStyle (20px, normal, 115%);
+	text-decoration: underline;
+	background-color: $colorWhite;
+	padding: 20px 22px;
+}
+
+.с-linkinator-body {
+	color: $colorBlue;
+}
+
+.с-linkinator-body__list {
+	padding: 0px 24px;
+
+	&:hover {
+		color: $colorOrange;
+		background-color: #d7dcdf;
+		@include transition;
+	}
+	
+	&:not(:last-of-type) .с-linkinator-body__link{
+		border-bottom: 1px solid #d7dcdf;
+	}
+}
+
+.с-linkinator-body__link {
+	display: block;
+	position: relative;
+	padding: 15px 0px;
+	margin: 0px 15px;
+	
+	:where(&:link, &:visited) {
+		text-decoration: none;
+	}
+}

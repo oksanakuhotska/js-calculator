@@ -1,0 +1,29 @@
+.c-outline-button {
+	font-size: $fontSizeTitle;
+	padding: 15px 20px;
+	min-height: 50px;
+	border: 1px solid #8b8d8e;
+	border-radius: 4%;
+	text-decoration: none;
+	cursor: pointer;
+	
+	&:hover {
+		background-color: $colorYellow;
+		border-color: $colorBlue;
+		color: $colorBlue;
+		@include transition;
+	}
+}
+
+.as-link {
+	border: none;
+	text-decoration: underline;
+	padding: 15px;
+
+	&:hover {
+		text-decoration: underline;
+		background-color: transparent;
+		color: $colorYellow;
+		@include transition;
+	}
+}
