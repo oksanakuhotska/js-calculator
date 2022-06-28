@@ -18,8 +18,22 @@ class Calculator {
 		this.outputElement.innerText = +a + +b;
 	}
 
-	substract(a, b) {
+	subtract() {
+		let a = this.inputElementA.value;
+		let b = this.inputElementB.value;
 		console.log(a - b);
+	}
+
+	divide() {
+		let a = this.inputElementA.value;
+		let b = this.inputElementB.value;
+		console.log(a * b);
+	}
+
+	multiply() {
+		let a = this.inputElementA.value;
+		let b = this.inputElementB.value;
+		console.log(a / b);
 	}
 };
 
