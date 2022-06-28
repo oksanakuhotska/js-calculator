@@ -1,12 +1,12 @@
 body {
 	height: 100%;
 	font-family: $fontFamily;
-	font-size: $fontSizePrimary;
-	color: $colorPrimary;
-	font-weight: $fontWeightPrimary;
+	font-size: 16px;
+	color: $darkColor;
+	font-weight: 400;
 	letter-spacing: normal;
 	line-height: 1;
-	text-align: left;
+	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-content: space-between;
