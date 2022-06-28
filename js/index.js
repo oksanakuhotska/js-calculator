@@ -21,19 +21,19 @@ class Calculator {
 	subtract() {
 		let a = this.inputElementA.value;
 		let b = this.inputElementB.value;
-		console.log(a - b);
+		this.outputElement.innerText = a - b;
 	}
 
 	divide() {
 		let a = this.inputElementA.value;
 		let b = this.inputElementB.value;
-		console.log(a * b);
+		this.outputElement.innerText = a / b;
 	}
 
 	multiply() {
 		let a = this.inputElementA.value;
 		let b = this.inputElementB.value;
-		console.log(a / b);
+		this.outputElement.innerText = a * b;
 	}
 };
 

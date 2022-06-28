@@ -1,8 +1,23 @@
-@import "1-settings/index";
-@import "2-tools/index";
-@import "3-generic/index";
-@import "4-base/index";
-@import "5-objects/index";
-@import "6-components/index";
-@import "7-pages/index";
-@import "8-helpers/index";
+:root {
+	--button-size: 50px;
+}
+
+.calculator {
+	width: 200px;
+	margin: 0 auto;
+
+}
+.number-pannel {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+
+	.button {
+		background-color: rgb(197, 243, 243);
+		width: var(--button-size);
+		height: var(--button-size);
+		flex: 0 0 27.33%;
+	}
+}
+

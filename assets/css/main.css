@@ -1,133 +1,29 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,600&display=swap");
-* {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
+:root {
+  --button-size: 50px;
 }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.calculator {
+  width: 200px;
+  margin: 0 auto;
 }
 
-html,
-body {
-  height: 100%;
-}
-
-body {
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-input,
-button,
-textarea {
-  font-size: inherit;
-}
-
-button {
-  cursor: pointer;
-  color: inherit;
-  background-color: inherit;
-}
-
-a {
-  color: inherit;
-}
-
-:where(a:link, a:visited) {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  font-family: "Open Sans";
-  font-size: 16px;
-  color: #000000;
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: 1;
-  text-align: center;
+.number-pannel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
 }
 
-a {
-  cursor: pointer;
-}
-
-:where(a:link, a:visited) {
-  text-decoration: underline;
-}
-
-.o-conteiner {
-  padding: 0px 15px;
-  margin: 0 auto;
-  max-width: 930px;
-}
-
-.u-color-accent {
-  color: #57ead9;
-}
-
-.u-color-secondary {
-  color: #ffffff;
-}
-
-.u-color-info {
-  color: #fbf16a;
-}
-
-.u-color-light {
-  color: #cac5c5;
-}
-
-.u-color-dark {
-  color: #000000;
-}
-
-.u-color-violet {
-  color: #9639e8;
+.number-pannel .button {
+  background-color: #c5f3f3;
+  width: var(--button-size);
+  height: var(--button-size);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 27.33%;
+          flex: 0 0 27.33%;
 }

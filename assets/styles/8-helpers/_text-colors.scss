@@ -1,5 +1,0 @@
-@each $colorName, $colorValue in $theme-colors {
-	.u-color-#{$colorName} {
-	color: $colorValue;
-	}
-}

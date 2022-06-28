@@ -1,7 +1,0 @@
-a{
-	cursor: pointer;
-	
-	:where(&:link, &:visited) {
-		text-decoration: underline;
-	}
-}
