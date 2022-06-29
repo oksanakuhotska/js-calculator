@@ -7,32 +7,34 @@
 	<title>Calculator</title>
 </head>
 <body>
+	<h1 class="title">Calculator</h1>
 	<div class="calculator">
-		<div class="input-wrapper">
-			<input  class="input" type="text" id="calculator-a">
+		<div class="input-output-container">
+			<input class="input" type="text" id="calculator-a">
 			<input class="input" type="text" id="calculator-b">
 			<output class="output"></output>
 		</div>
 		
-		<div class="math-opperations">
-			<button type="button" class="button" onclick="calculator.add()">+</button>
-			<button type="button" class="button" onclick="calculator.subtract()">-</button>
-			<button type="button" class="button" onclick="calculator.divide()">/</button>
-			<button type="button" class="button" onclick="calculator.multiply()">*</button>
+		<div class="operation-panel">
+				<button type="button" class="button add" onclick="calculator.add()">+</button>
+				<button type="button" class="button subtract" onclick="calculator.subtract()">-</button>
+				<button type="button" class="button divide" onclick="calculator.divide()">/</button>
+				<button type="button" class="button multiply" onclick="calculator.multiply()">*</button>
+				<button type="button" class="button equal" onclick="calculator.equal()">=</button>
+				<button type="button" class="button number number-1">1</button>
+				<button type="button" class="button number number-2">2</button>
+				<button type="button" class="button number number-3">3</button>
+				<button type="button" class="button number number-4">4</button>
+				<button type="button" class="button number number-5">5</button>
+				<button type="button" class="button number number-6">6</button>
+				<button type="button" class="button number number-7">7</button>
+				<button type="button" class="button number number-8">8</button>
+				<button type="button" class="button number number-9">9</button>
+				<button type="button" class="button number number-0">0</button>
+				<button type="button" class="button number number-point">.</button>
 		</div>
-		
-		<div class="number-pannel">
-			<button type="button" class="button number-1">1</button>
-			<button type="button" class="button number-2">2</button>
-			<button type="button" class="button number-3">3</button>
-			<button type="button" class="button number-4">4</button>
-			<button type="button" class="button number-5">5</button>
-			<button type="button" class="button number-6">6</button>
-			<button type="button" class="button number-7">7</button>
-			<button type="button" class="button number-8">8</button>
-			<button type="button" class="button number-9">9</button>
-			<button type="button" class="button number-0">0</button>
-		</div>
+
+
 	</div>
 	<script src="/js/index.js"></script>
 </body>

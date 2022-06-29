@@ -1,29 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Spectral:500&display=swap");
 :root {
   --button-size: 50px;
 }
 
+body {
+  font-size: 20px;
+  color: #8f85c4;
+  font-weight: 500;
+  background-color: #e6ecd1;
+  font-family: 'Spectral';
+}
+
+.title {
+  margin: 20px;
+  text-align: center;
+  font-size: 40px;
+  color: #0a2726;
+  letter-spacing: 11.5px;
+}
+
 .calculator {
-  width: 200px;
+  width: 250px;
   margin: 0 auto;
 }
 
-.number-pannel {
+.input-output-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: block;
+  width: 80px;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: inherit;
+  border: none;
+  border-radius: 5px;
+  color: inherit;
+  background-color: #9dc2a3;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+.input:active {
+  border: none;
+  padding: 3px 7px;
+}
+
+.input + .input {
+  margin-left: 5px;
+}
+
+.output {
+  min-width: 70px;
+  border: #446a6d;
+  border-radius: 15px;
+  margin-left: 5px;
+  padding: 5px 15px;
+  color: #ffffff;
+  background-color: #446561;
+  font-weight: inherit;
+  font-family: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.operation-panel {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 1rem;
+  -ms-grid-columns: 50px 50px 50px 50px;
+      grid-template-columns: 50px 50px 50px 50px;
 }
 
-.number-pannel .button {
-  background-color: #c5f3f3;
+.number-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+}
+
+.number-2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+}
+
+.number-3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+}
+
+.number-4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+}
+
+.number-5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+}
+
+.number-6 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+}
+
+.number-7 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+}
+
+.number-8 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+}
+
+.number-9 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+}
+
+.number-0 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 4;
+  grid-row: 4 / 4;
+}
+
+.number-point {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 4;
+  grid-row: 4 / 4;
+}
+
+.equal {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 4;
+  grid-row: 4 / 4;
+}
+
+.button {
+  border: 1px solid #989b9e;
+  background-color: #a4cdcd;
   width: var(--button-size);
   height: var(--button-size);
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 27.33%;
-          flex: 0 0 27.33%;
+  border-radius: 5px;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+.button:active {
+  background-color: #729c9c;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.button.equal {
+  background-color: #ecdc99;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.button.equal:active {
+  background-color: #ebb26c;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.number {
+  background-color: #c5f3f3;
+}
+
+.number:active {
+  background-color: #ddec91;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
