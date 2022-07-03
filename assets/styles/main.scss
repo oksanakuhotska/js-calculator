@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Spectral:500&display=swap");
 
 body {
-	font-size: 20px;
+	font-size: 24px;
 	color: #8f85c4;
 	font-weight: 500;
 	background-color: rgb(230, 236, 209);
@@ -12,16 +12,21 @@ body {
 }
 
 .title {
-	margin: 20px;
+	margin: 50px 5px 25px 5px;
 	text-align: center;
 	font-size: 40px;
-	color: #0a2726;
+	color: #077d79;
 	letter-spacing: 11.5px;
+	text-shadow: 1px 5px 10px #c8acea;
 }
 
 .calculator {
-	width: 250px;
+	width: 260px;
 	margin: 0 auto;
+	padding: 25px;
+	background-color: beige;
+	border-radius: 5px;
+	outline: 10px solid #fafde4;
 }
 
 .input-output-container {
@@ -54,7 +59,10 @@ body {
 }
 
 .output {
-	min-width: 70px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 40px;
 	border: #446a6d;
 	border-radius: 15px;
 	margin-left: 5px;
@@ -68,15 +76,17 @@ body {
 	text-overflow: ellipsis;
 }
 
-//=========== operation-panel 
+//=========== operation-panel ==========
 
 .operation-panel {
+	
 	display: grid;
 	grid-gap: 10px;
 	justify-content: center;
   grid-template-columns: 50px 50px 50px 50px;
 }
 
+// 
 // розташування numbers
 
 .number-1 {
@@ -130,17 +140,24 @@ body {
   grid-row: 4 / 4;
 }
 
+//====== buttons
 
 .button {
 	border: 1px solid #989b9e;
 	background-color: rgb(164, 205, 205);
 	width: var(--button-size);
 	height: var(--button-size);
+	cursor: pointer;
 	border-radius: 5px;
 	font-size: inherit;
 	color: inherit;
 	font-weight: inherit;
 	font-family: inherit;
+
+	&:hover {
+		background-color: rgb(178, 200, 219);
+		transition: all 0.3s ease 0s;
+	}
 
 	&:active {
 		background-color: rgb(114, 156, 156);
@@ -151,6 +168,11 @@ body {
 		background-color: rgb(236, 220, 153);
 		transition: all 0.3s ease 0s;
 		
+		&:hover {
+			background-color: rgb(219, 244, 182);
+			transition: all 0.3s ease 0s;
+		}
+
 		&:active {
 			background-color: rgb(235, 178, 108);
 			transition: all 0.3s ease 0s;
@@ -160,6 +182,11 @@ body {
 
 .number {
 	background-color: rgb(197, 243, 243);
+
+	&:hover {
+		background-color: rgb(154, 204, 189);
+		transition: all 0.3s ease 0s;
+	}
 
 	&:active {
 		background-color: rgb(221, 236, 145);
