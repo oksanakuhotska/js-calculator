@@ -94,10 +94,6 @@ body {
       grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.clear {
-  grid-column: span 2;
-}
-
 .equal {
   grid-column: span 2;
 }
@@ -161,6 +157,23 @@ body {
 
 .button.clear:active {
   background-color: #674599;
+  color: #fafde4;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.button.undo {
+  background-color: #ecd4be;
+}
+
+.button.undo:hover {
+  background-color: #f5c7b0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.button.undo:active {
+  background-color: #935b6c;
   color: #fafde4;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;

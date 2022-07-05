@@ -85,9 +85,9 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.clear {
-	grid-column: span 2;
-}
+// .clear {
+// 	grid-column: span 2;
+// }
 
 .equal {
 	grid-column: span 2;
@@ -147,6 +147,21 @@ body {
 
 		&:active {
 			background-color: rgb(103, 69, 153);
+			color: #fafde4;
+			transition: all 0.3s ease 0s;
+		}
+	}
+
+	&.undo {
+		background-color: rgb(236, 212, 190);
+		
+		&:hover {
+			background-color: rgb(245, 199, 176);
+			transition: all 0.3s ease 0s;
+		}
+
+		&:active {
+			background-color: rgb(147, 91, 108);
 			color: #fafde4;
 			transition: all 0.3s ease 0s;
 		}
